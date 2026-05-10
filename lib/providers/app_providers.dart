@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../models/app_models.dart';
@@ -76,13 +77,13 @@ class ResumeNotifier extends StateNotifier<AsyncValue<ResumeModel?>> {
   Future<void> uploadAndAnalyze({
     required String userId,
     required String fileName,
-    required List<int> bytes,
+    required Uint8List bytes,
   }) async {
     state = const AsyncValue.loading();
     state = await AsyncValue.guard(() => _service.uploadAndAnalyze(
           userId: userId,
           fileName: fileName,
-          bytes: bytes as dynamic,
+          bytes: bytes,
         ));
   }
 }
