@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_strings.dart';
-import '../../models/app_models.dart';
 import '../../providers/app_providers.dart';
 import '../../services/supabase_service.dart';
 import '../../widgets/app_widgets.dart';

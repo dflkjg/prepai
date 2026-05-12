@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import '../../core/constants/app_colors.dart';
 import '../../models/app_models.dart';
 import '../../providers/app_providers.dart';
-import '../../services/resume_service.dart';
 import '../../services/supabase_service.dart';
 import '../../widgets/app_widgets.dart';
 
